@@ -26,22 +26,22 @@ public class ProxyController {
 
     @Get("/proxy")
     public Single<HttpResponse> proxyget(@Nullable @Body Object body, HttpRequest<?> request) {
-        return proxy(request);
+        return Single.just(HttpResponse.ok("proxy"));
     }
 
     @Post("/proxy")
     public Single<HttpResponse> proxypost(@Nullable @Body Object body, HttpRequest<?> request) {
-        return proxy(request);
+        return Single.just(HttpResponse.ok("proxy"));
     }
 
     @Put("/proxy")
     public Single<HttpResponse> proxyput(@Nullable @Body Object body, HttpRequest<?> request) {
-        return proxy(request);
+        return Single.just(HttpResponse.ok("proxy"));
     }
 
     @Delete("/proxy")
     public Single<HttpResponse> proxydelete(@Nullable @Body Object body, HttpRequest<?> request) {
-        return proxy(request);
+        return Single.just(HttpResponse.ok("proxy"));
     }
 
     private Single<HttpResponse> proxy(HttpRequest<?> request) {
