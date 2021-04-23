@@ -1,0 +1,9 @@
+micronaut:
+    application:
+        name: test
+    server:
+        port: 8080
+    http:
+        client:
+            pool:
+                enabled: true
